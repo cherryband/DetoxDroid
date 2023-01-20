@@ -123,7 +123,8 @@ object DetoxUtil {
 
     @JvmStatic
     fun togglePause(
-        context: Context
+        context: Context,
+        minutes: Int? = null
     ): Boolean {
         val now = System.currentTimeMillis()
         val prefs = Prefs_(context)
@@ -142,15 +143,17 @@ object DetoxUtil {
         }
 
         isPausing = !isPausing // new pause state: inversion of "are we currently pausing?"
-        prefs.edit().pauseUntil().put(if (isPausing) now + TimeUnit.MINUTES.toMillis(prefs.pauseDuration().get().toLong()) else -1).apply()
+        val pauseMinutes = minutes ?: prefs.pauseDuration().get()
+        prefs.edit().pauseUntil().put(if (isPausing) now + TimeUnit.MINUTES.toMillis(pauseMinutes.toLong()) else -1).apply()
         setActive(context, !isPausing)
+        
         if (isPausing) {
             // a pause was made, let's show a hint to the user
             Toast.makeText(
                 context,
                 context.getString(
                     R.string.app_quickSettingsTile_paused,
-                    prefs.pauseDuration().get()
+                    pauseMinutes
                 ),
                 Toast.LENGTH_SHORT
             ).show()

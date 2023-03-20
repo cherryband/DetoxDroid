@@ -1,4 +1,4 @@
-package com.flx_apps.digitaldetox
+package space.cherryband.digitaldetox
 
 import android.app.NotificationManager
 import android.app.admin.DevicePolicyManager
@@ -9,7 +9,7 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.provider.Settings
 import android.widget.Toast
-import com.flx_apps.digitaldetox.prefs.Prefs_
+import space.cherryband.digitaldetox.prefs.Prefs_
 import java.util.concurrent.TimeUnit
 
 

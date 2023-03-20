@@ -1,4 +1,4 @@
-package com.flx_apps.digitaldetox
+package space.cherryband.digitaldetox
 
 import android.os.Bundle
 import android.view.Menu
@@ -60,6 +60,7 @@ open class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onBackPressed() {
         if (supportFragmentManager.backStackEntryCount > 0) {
             supportFragmentManager.popBackStack()

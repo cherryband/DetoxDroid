@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.flx_apps.digitaldetox">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <!-- To (de-)activate grayscale -->
     <uses-permission
@@ -35,7 +34,6 @@
 
         <activity
             android:name=".MainActivity_"
-            android:label="@string/app.name_"
             android:theme="@style/AppTheme.NoActionBar"
             android:exported="true">
             <intent-filter>
@@ -89,7 +87,8 @@
             android:excludeFromRecents="true"
             android:label="Pause Duration"
             android:launchMode="singleInstance"
-            android:theme="@style/Theme.MaterialComponents.Light.Dialog">
+            android:theme="@style/Theme.MaterialComponents.Light.Dialog"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.service.quicksettings.action.QS_TILE_PREFERENCES" />
             </intent-filter>

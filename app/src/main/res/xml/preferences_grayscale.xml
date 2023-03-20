@@ -5,7 +5,7 @@
         app:key="grayscaleIgnoreNonFullScreen"
         app:summary="@string/home.grayscale.ignoreNonFullScreen.description"
         app:title="@string/home.grayscale.ignoreNonFullScreen" />
-    <com.flx_apps.digitaldetox.prefs.ExceptionsPreference
+    <space.cherryband.digitaldetox.prefs.ExceptionsPreference
         android:icon="@drawable/ic_exceptions"
         android:key="grayscaleExceptions"
         app:summary="@string/exceptionsList._exceptionsDefined"

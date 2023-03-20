@@ -1,12 +1,12 @@
-package com.flx_apps.digitaldetox.prefs
+package space.cherryband.digitaldetox.prefs
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.navigation.findNavController
 import androidx.preference.Preference
-import com.flx_apps.digitaldetox.AppExceptionsListFragment_
-import com.flx_apps.digitaldetox.MainActivity
-import com.flx_apps.digitaldetox.R
+import space.cherryband.digitaldetox.AppExceptionsListFragment_
+import space.cherryband.digitaldetox.MainActivity
+import space.cherryband.digitaldetox.R
 
 /**
  * Creation Date: 1/30/21

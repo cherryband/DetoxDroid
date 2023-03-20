@@ -1,9 +1,9 @@
-package com.flx_apps.digitaldetox.prefs
+package space.cherryband.digitaldetox.prefs
 
 import android.content.Context
 import android.util.AttributeSet
 import androidx.preference.Preference
-import com.flx_apps.digitaldetox.R
+import space.cherryband.digitaldetox.R
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 import java.time.format.TextStyle

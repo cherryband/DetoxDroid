@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.flx_apps.digitaldetox.HomeFragment_"
+        android:name="space.cherryband.digitaldetox.HomeFragment_"
         android:label="@string/navigation.home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -30,19 +30,19 @@
 
     <dialog
         android:id="@+id/nav_uninstall"
-        android:name="com.flx_apps.digitaldetox.UninstallDetoxDroidDialogFragment"
+        android:name="space.cherryband.digitaldetox.UninstallDetoxDroidDialogFragment"
         android:label="@string/navigation.uninstall"
         />
 
     <fragment
         android:id="@+id/nav_about"
-        android:name="com.flx_apps.digitaldetox.AboutFragment"
+        android:name="space.cherryband.digitaldetox.AboutFragment"
         android:label="@string/navigation.about" />
     <fragment
         android:id="@+id/appExceptionsListFragment_"
-        android:name="com.flx_apps.digitaldetox.AppExceptionsListFragment_"
+        android:name="space.cherryband.digitaldetox.AppExceptionsListFragment_"
         android:label="@string/action.manageExceptions" />
     <fragment
         android:id="@+id/nav_no_permissions"
-        android:name="com.flx_apps.digitaldetox.NoPermissionsFragment_" />
+        android:name="space.cherryband.digitaldetox.NoPermissionsFragment_" />
 </navigation>

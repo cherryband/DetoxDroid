@@ -1,4 +1,4 @@
-package com.flx_apps.digitaldetox.prefs
+package space.cherryband.digitaldetox.prefs
 
 import android.content.Context
 import android.os.Bundle
@@ -9,8 +9,8 @@ import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentContainerView
 import androidx.preference.MultiSelectListPreference
-import com.flx_apps.digitaldetox.R
-import com.flx_apps.digitaldetox.log
+import space.cherryband.digitaldetox.R
+import space.cherryband.digitaldetox.log
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment

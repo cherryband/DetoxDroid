@@ -1,4 +1,4 @@
-package com.flx_apps.digitaldetox.prefs
+package space.cherryband.digitaldetox.prefs
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,9 +6,9 @@ import androidx.fragment.app.DialogFragment
 import androidx.preference.Preference
 import androidx.preference.PreferenceCategory
 import androidx.preference.isEmpty
-import com.flx_apps.digitaldetox.DetoxAccessibilityService
-import com.flx_apps.digitaldetox.R
-import com.flx_apps.digitaldetox.log
+import space.cherryband.digitaldetox.DetoxAccessibilityService
+import space.cherryband.digitaldetox.R
+import space.cherryband.digitaldetox.log
 import com.takisoft.preferencex.PreferenceFragmentCompat
 import nl.invissvenska.numberpickerpreference.NumberDialogPreference
 import nl.invissvenska.numberpickerpreference.NumberPickerPreferenceDialogFragment
@@ -47,6 +47,7 @@ open class PreferenceFragment : PreferenceFragmentCompat() {
     @EFragment
     @PreferenceScreen(R.xml.preferences_zen_mode)
     open class ZenModePreferencesFragment : PreferenceFragment() {
+        @Deprecated("Deprecated in Java")
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {}
         override fun onPreferenceTreeClick(preference: Preference?): Boolean {
             startActivity(Intent("android.settings.ZEN_MODE_PRIORITY_SETTINGS"))
@@ -57,24 +58,28 @@ open class PreferenceFragment : PreferenceFragmentCompat() {
     @EFragment
     @PreferenceScreen(R.xml.preferences_doom_scrolling)
     open class DoomScrollingPreferencesFragment : PreferenceFragment() {
+        @Deprecated("Deprecated in Java")
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {}
     }
 
     @EFragment
     @PreferenceScreen(R.xml.preferences_grayscale)
     open class GrayscalePreferencesFragment : PreferenceFragment() {
+        @Deprecated("Deprecated in Java")
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {}
     }
 
     @EFragment
     @PreferenceScreen(R.xml.preferences_pause_button)
     open class PauseButtonPreferencesFragment : PreferenceFragment() {
+        @Deprecated("Deprecated in Java")
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {}
     }
 
     @EFragment
     @PreferenceScreen(R.xml.preferences_deactivate_apps)
     open class DeactivateAppsPreferencesFragment : PreferenceFragment() {
+        @Deprecated("Deprecated in Java")
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {}
     }
 
@@ -87,6 +92,7 @@ open class PreferenceFragment : PreferenceFragmentCompat() {
         @PreferenceByKey(R.string.home_timeRules_add)
         lateinit var btnAddRule: Preference
 
+        @Deprecated("Deprecated in Java")
         override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {}
 
         @AfterPreferences

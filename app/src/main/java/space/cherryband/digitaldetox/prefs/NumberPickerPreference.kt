@@ -1,4 +1,4 @@
-package com.flx_apps.digitaldetox.prefs
+package space.cherryband.digitaldetox.prefs
 
 import android.content.Context
 import android.util.AttributeSet

@@ -1,4 +1,4 @@
-package com.flx_apps.digitaldetox
+package space.cherryband.digitaldetox
 
 import android.accessibilityservice.AccessibilityService
 import android.app.NotificationManager
@@ -12,8 +12,8 @@ import android.view.accessibility.AccessibilityEvent
 import android.view.inputmethod.InputMethodManager
 import android.widget.TextView
 import androidx.appcompat.view.ContextThemeWrapper
-import com.flx_apps.digitaldetox.prefs.Prefs_
-import com.flx_apps.digitaldetox.prefs.TimeRule
+import space.cherryband.digitaldetox.prefs.Prefs_
+import space.cherryband.digitaldetox.prefs.TimeRule
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import org.androidannotations.annotations.EService
 import org.androidannotations.annotations.SystemService

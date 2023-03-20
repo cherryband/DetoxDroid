@@ -1,4 +1,4 @@
-package com.flx_apps.digitaldetox
+package space.cherryband.digitaldetox
 
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
@@ -17,11 +17,10 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.flx_apps.digitaldetox.prefs.Prefs_
+import space.cherryband.digitaldetox.prefs.Prefs_
 import com.mikepenz.fastadapter.FastAdapter
 import com.mikepenz.fastadapter.adapters.ItemAdapter
 import com.mikepenz.fastadapter.items.AbstractItem
-import kotlinx.android.synthetic.main.app_bar_main.*
 import org.androidannotations.annotations.*
 import org.androidannotations.annotations.sharedpreferences.Pref
 import java.util.*
@@ -138,6 +137,7 @@ open class AppExceptionsListFragment : Fragment() {
         isAppsListLoaded.value = true
     }
 
+    @Deprecated("Deprecated in Java")
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
         val searchView = (menu.findItem(R.id.menu_search).actionView as SearchView)

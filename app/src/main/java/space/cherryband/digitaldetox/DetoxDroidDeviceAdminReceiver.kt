@@ -1,4 +1,4 @@
-package com.flx_apps.digitaldetox
+package space.cherryband.digitaldetox
 
 import android.app.admin.DeviceAdminReceiver
 import android.app.admin.DevicePolicyManager

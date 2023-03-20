@@ -1,4 +1,4 @@
-package com.flx_apps.digitaldetox
+package space.cherryband.digitaldetox
 
 import android.app.NotificationManager
 import android.content.Context
@@ -11,7 +11,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.flx_apps.digitaldetox.prefs.Prefs_
+import space.cherryband.digitaldetox.prefs.Prefs_
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_home.*
 import org.androidannotations.annotations.AfterViews
@@ -67,7 +67,7 @@ open class HomeFragment : Fragment() {
             showAskForPermissionsSnackbar(btnToggleZenModeDefault, {
                 findNavController().navigate(
                     R.id.nav_no_permissions,
-                    bundleOf("rootCommand" to "dpm set-device-owner com.flx_apps.digitaldetox/.DetoxDroidDeviceAdminReceiver")
+                    bundleOf("rootCommand" to "dpm set-device-owner space.cherryband.digitaldetox/.DetoxDroidDeviceAdminReceiver")
                 )
             })
         }
@@ -94,7 +94,7 @@ open class HomeFragment : Fragment() {
             showAskForPermissionsSnackbar(btnToggleGrayscale, {
                 findNavController().navigate(
                     R.id.nav_no_permissions,
-                    bundleOf("rootCommand" to "pm grant com.flx_apps.digitaldetox android.permission.WRITE_SECURE_SETTINGS")
+                    bundleOf("rootCommand" to "pm grant space.cherryband.digitaldetox android.permission.WRITE_SECURE_SETTINGS")
                 )
             })
             return

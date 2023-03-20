@@ -1,10 +1,10 @@
-package com.flx_apps.digitaldetox
+package space.cherryband.digitaldetox
 
 import android.os.Build
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
 import androidx.annotation.RequiresApi
-import com.flx_apps.digitaldetox.prefs.Prefs_
+import space.cherryband.digitaldetox.prefs.Prefs_
 
 
 /**
